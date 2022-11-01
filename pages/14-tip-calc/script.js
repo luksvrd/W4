@@ -4,9 +4,6 @@ const form = document.querySelector("form");
 function handleSubmit(e) {
   // prevents the browsers default behavior of trying to submit a form and the page reloading.
   e.preventDefault();
-  const data = new FormData(e.target);
-  const userInputs = Object.fromEntries(data.entries());
-  p.textContent = createResponseMessage(userInputs);
 
   const submission = {
     total: e.target.total.value,
